@@ -3,6 +3,20 @@ fun main(){
     showMessage("Torre Antigua Univalle")
     println("La suma es: ${calcularNumeros(1,2)}")
     println("La resta es: ${restarNumeros(1,2)}")
+
+    println("///--------------Sobrecarga---------------///")
+    println("El precio total es: ${calcularPrecioFinal(10,0.32)}")
+    println("El precio total es: ${calcularPrecioFinal(10)}")
+    println("El precio total es: ${calcularPrecioFinal(10.51)}")
+
+    println("----PROMOCIONES----")
+    procesarOferta("Galleta","2% descuento","hasta verano.")
+    procesarOferta("Inca Kola")
+    //Si se tiene el producto, la duración y el valor por defecto de la promción:
+    //Se pueden definir los parámetros indicando el nombre del parámetro de forma explícita siempre que el parámetro
+    //tenga valor por defecto
+    procesarOferta("Leche Pil", duracion = "hasta otonio")
+    procesarOferta("M&Ms", duracion = "hasta abril", promocion = "4% descuento")
 }
 
 //Funciones
@@ -33,3 +47,19 @@ fun calcularNumeros(numero1: Int, numero2: Int): Int {
 }
 
 fun restarNumeros(numero1: Int, numero2: Int): Int = numero1 - numero2
+
+//Sobrecarga de funciones
+fun calcularPrecioFinal(precio: Int): Double {
+    val total = precio + (precio * 0.15)
+    return total
+}
+
+fun calcularPrecioFinal(precio: Double): Double = precio + (precio * 0.15)
+
+fun calcularPrecioFinal(precio: Int, iva: Double): Double = precio + (precio * iva)
+
+//Las funciones pueden tener valores por defecto.
+fun procesarOferta(producto: String, promocion: String = "sin promocion", duracion: String = "hasta fin de anio"){
+    val resultado = "El producto $producto, $promocion, $duracion"
+    println(resultado)
+}
