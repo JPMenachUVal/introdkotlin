@@ -36,8 +36,8 @@ fun recorrerLista(lista: List<Int>){
 
 
 //Resolución ejercicio 2 práctica
-//Dado un array quitar los duplicados
-//en formato string
+/*Dado un array quitar los duplicados
+  en formato string*/
 fun quitarDuplicados(numeros: List<Int>) {
     //Programación funcional a su máxima expresión:
     val resultado = numeros.distinct().sorted().joinToString()
