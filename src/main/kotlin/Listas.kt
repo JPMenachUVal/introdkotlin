@@ -89,4 +89,8 @@ fun main(){
     println(total)
     //Para qué sirve el maxOf?
     //Devuelve el máximo entre dos números, si los valores son iguales retorna el primero
+
+    //De la lista edades indicar al de mayor y menor edad
+    println("El más joven es: ${edades.sorted().first()}")
+    println("El más adulto es: ${edades.sorted().last()}")
 }
