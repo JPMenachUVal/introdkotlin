@@ -43,4 +43,9 @@ fun main() {
 
     //Promedio de los carnets de los estudiantes
     estudiantes.keys.average()
+    println(estudiantes.keys.sorted())
+    println(estudiantes.values.sorted())
+    estudiantes.keys.count {
+        it==1
+    }
 }
