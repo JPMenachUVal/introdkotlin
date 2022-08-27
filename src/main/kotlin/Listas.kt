@@ -1,4 +1,4 @@
-/*Colexxiones: LIstas*/
+/*Colecciones: Listas*/
 fun main(){
     //Lista no mutable
     val nombres = listOf("Luis","Alfredo","Hannes","Hugo")

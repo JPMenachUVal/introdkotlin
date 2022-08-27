@@ -28,7 +28,7 @@ class Cancion(
         valoracion: Int
     ): this(titulo, autor, genero){
         //Procesos del constructor
-        //La bieja escuela
+        //La vieja escuela
         this.valoracion = valoracion
         this.duracion = duracion
     }
