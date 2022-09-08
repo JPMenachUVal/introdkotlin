@@ -18,6 +18,12 @@ solo si el comportamiento no variará o será similar al momento de implementar,
 
 //Interfaz: comportamientos es lo que más se ajusta en los cambios de proyecto
 //se puede implementar en cualquier clase del software
+
+//Interfaz sobre abstracto por simular multi herencia
+//La herencia solo permite herencia con cosas de la misma naturaleza = clase abstracta
+//Cualquier clase del proyecto puede adoptar los comportamientos de la interfaz = interfaces
+
+//Un ejemplo de interfaz es OnClick en Android Studio
 interface Localizable {
     abstract var latitud: Double
     abstract var longitud: Double
